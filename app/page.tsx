@@ -7,19 +7,20 @@ export default function DadJokeGenerator() {
 
 
   async function fetchJoke() {
-    // setLoading(true);
 
     const response = await fetch("/api/joke");
     const jokeData = await response.json();
 
     setJoke(jokeData.joke);
-    // setLoading(false);
   }
 
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
-      <h1 className="text-3xl font-bold mb-4" onClick={fetchJoke}>Random Dad Joke Generator</h1>
+      <h1 className="text-3xl font-bold mb-4">Random Joke</h1>
+      <button onClick={fetchJoke} className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded">
+        Click Here
+      </button>
       <p className="mt-4 text-xl text-center">{joke}</p>
     </div>
   );

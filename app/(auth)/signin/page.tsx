@@ -8,8 +8,8 @@ export default function SigninPage() {
         </h2>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white dark:bg-[#1A1A1A] py-8 px-4 shadow sm:rounded-lg sm:px-10 border border-gray-100 dark:border-dark-border-subtle">
+      <div className="mt-8 sm:mx-auto w-full max-w-md">
+        <div className="bg-white dark:bg-[#1A1A1A] w-full py-8 px-6 shadow rounded-lg border border-gray-100 dark:border-dark-border-subtle">
           <form className="space-y-6">
             <div>
               <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
